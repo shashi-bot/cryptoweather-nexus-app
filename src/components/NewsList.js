@@ -5,10 +5,7 @@ import { fetchNews } from '../redux/slices/newsSlice';
 const NewsList = () => {
   const dispatch = useDispatch();
   const { articles, status } = useSelector((state) => state.news);
-  if (!articles || !Array.isArray(articles)) {
-    console.error("Error: Data is not an array", data);
-    return <p>Loading or No Data Available...</p>;
-  }
+
   useEffect(() => {
     dispatch(fetchNews());
     const interval = setInterval(() => {
@@ -20,7 +17,10 @@ const NewsList = () => {
 
   if (status === 'loading') return <p>Loading...</p>;
   if (status === 'failed') return <p>Failed to load news</p>;
-
+  if (!articles || !Array.isArray(articles)) {
+    console.error("Error: Data is not an array", data);
+    return <p>Loading or No Data Available...</p>;
+  }
   return (
     <div>
        <h2 className="text-xl font-semibold mb-4">📰 Crypto News</h2>
