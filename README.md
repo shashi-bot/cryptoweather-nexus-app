@@ -116,9 +116,12 @@ vercel deploy
 ✅ **Vercel** – Deployment  
 
 ---
+## Live Demo  
+The project is deployed and accessible at: [https://cryptoweather-nexus-app-zg67-9ao70rkjd.vercel.app]
 
+---
 ## **👨‍💻 Author & Contact**
-🔗 GitHub: https://github.com/shashi-bot  
+🔗 GitHub: [https://github.com/shashi-bot]  
 📧 Email: shashiranjankumar494@gmail.com  
 
 If you found this project useful, **star ⭐ the repository** on GitHub! 🚀
