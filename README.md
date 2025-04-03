@@ -107,7 +107,7 @@ vercel deploy
 ---
 
 ## **👨‍💻 Author & Contact**
-🔗 GitHub: [your-github-username](https://github.com/shashi-bot)  
+🔗 GitHub: https://github.com/shashi-bot  
 📧 Email: shashiranjankumar494@gmail.com  
 
 If you found this project useful, **star ⭐ the repository** on GitHub! 🚀
