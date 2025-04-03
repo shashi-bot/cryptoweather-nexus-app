@@ -1,5 +1,16 @@
 # **Next.js Dashboard – Weather, Crypto & News**
 A **real-time Next.js dashboard** that provides weather forecasts, cryptocurrency prices, and news updates. It integrates **Redux**, **WebSockets**, and **Tailwind CSS** for a seamless user experience.
+---
+## Screenshots
+
+### 1️⃣ Dashboard View
+![Dashboard](https://github.com/user-attachments/assets/327d0841-a3f4-43bb-944f-e9fd37275044)
+
+### 2️⃣ Crypto Prices Page
+![Crypto Prices](https://github.com/user-attachments/assets/4df25028-6d8f-4846-8b00-849442676844)
+
+### 3️⃣ Weather Details Page
+![Weather Details](https://github.com/user-attachments/assets/8f5bc430-8822-4c3d-b4f0-1a1addb82ad7)
 
 
 ---
