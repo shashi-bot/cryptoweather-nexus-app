@@ -1,40 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# **Next.js Dashboard – Weather, Crypto & News**
+A **real-time Next.js dashboard** that provides weather forecasts, cryptocurrency prices, and news updates. It integrates **Redux**, **WebSockets**, and **Tailwind CSS** for a seamless user experience.
 
-## Getting Started
 
-First, run the development server:
+---
 
+## **🚀 Features**
+✅ **Weather Forecast** – Fetches real-time weather data from OpenWeatherMap API.  
+✅ **Cryptocurrency Prices** – Displays crypto data from CoinGecko/CoinCap API with WebSocket updates.  
+✅ **News Updates** – Fetches live news articles from NewsData.io API.  
+✅ **Favorites System** – Save favorite cities and cryptocurrencies to local storage.  
+✅ **Real-Time Notifications** – WebSocket-driven alerts for price spikes and weather warnings.  
+✅ **Data Auto-Refresh** – Syncs data every **60 seconds**, handling **partial API failures gracefully**.  
+✅ **Responsive UI** – Tailwind CSS-based layout, optimized for mobile and desktop.  
+✅ **Error Handling** – Displays fallback UI when API calls fail.  
+✅ **Deployed on Vercel** – Fully hosted and accessible online.  
+
+---
+
+
+
+
+## **🛠️ Setup & Installation**
+### **1️⃣ Clone the Repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/shashi-bot/cryptoweather-nexus-app
+cd cryptoweather-nexus-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **2️⃣ Install Dependencies**
+```bash
+npm install
+# OR
+yarn install
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### **3️⃣ Set Up Environment Variables**
+Create a **`.env.local`** file in the project root and add:
+```env
+NEXT_PUBLIC_WEATHER_API_KEY=your_openweathermap_api_key
+NEXT_PUBLIC_CRYPTO_API_KEY=your_coingecko_api_key
+NEXT_PUBLIC_NEWS_API_KEY=your_newsdata_api_key
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### **4️⃣ Run the Development Server**
+```bash
+npm run dev
+# OR
+yarn dev
+```
+Open **`http://localhost:3000`** in your browser.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## **📜 API Usage**
+| Feature | API Used | Endpoint |
+|---------|---------|----------|
+| **Weather** | OpenWeatherMap | `https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}` |
+| **Crypto Prices** | CoinGecko/CoinCap | `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd` |
+| **Live Crypto Updates** | CoinCap WebSocket | `wss://ws.coincap.io/prices?assets=bitcoin,ethereum` |
+| **News** | NewsData.io | `https://newsdata.io/api/1/news?apikey={API_KEY}` |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## **🛠️ Build & Deploy**
+### **1️⃣ Build for Production**
+```bash
+npm run build
+# OR
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### **2️⃣ Start the Production Server**
+```bash
+npm run start
+# OR
+yarn start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **3️⃣ Deploy to Vercel**
+```bash
+vercel deploy
+```
+*(Ensure you have the Vercel CLI installed.)*
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## **🖌️ UI/UX Design Decisions**
+1. **Tailwind CSS** – Used for a clean, responsive layout.  
+2. **Card-Based UI** – Separate WeatherCard & CryptoCard components for modularity.  
+3. **WebSocket Notifications** – Provides instant price/weather alerts.  
+4. **State Persistence** – Redux state saved in `localStorage` for favorites.  
+5. **Partial Failure Handling** – If one API fails, the rest of the data still loads.  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
+
+
+## **🛠️ Tech Stack**
+✅ **Next.js 13+** – React framework for SSR & SSG  
+✅ **Redux Toolkit** – State management  
+✅ **Tailwind CSS** – Styling  
+✅ **WebSockets** – Real-time crypto price updates  
+✅ **API Integration** – OpenWeatherMap, CoinGecko, NewsData.io  
+✅ **Vercel** – Deployment  
+
+---
+
+## **👨‍💻 Author & Contact**
+🔗 GitHub: [your-github-username](https://github.com/shashi-bot)  
+📧 Email: shashiranjankumar494@gmail.com  
+
+If you found this project useful, **star ⭐ the repository** on GitHub! 🚀
