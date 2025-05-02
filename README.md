@@ -15,7 +15,7 @@ A **real-time Next.js dashboard** that provides weather forecasts, cryptocurrenc
 
 ---
 
-## ** Features**
+## **Features**
  **Weather Forecast** – Fetches real-time weather data from OpenWeatherMap API.  
  **Cryptocurrency Prices** – Displays crypto data from CoinGecko/CoinCap API with WebSocket updates.  
  **News Updates** – Fetches live news articles from NewsData.io API.  
@@ -31,21 +31,21 @@ A **real-time Next.js dashboard** that provides weather forecasts, cryptocurrenc
 
 
 
-## ** Setup & Installation**
-### ** 1 Clone the Repository**
+## **Setup & Installation**
+### **1 Clone the Repository**
 ```bash
 git clone https://github.com/shashi-bot/cryptoweather-nexus-app
 cd cryptoweather-nexus-app
 ```
 
-### ** 2 Install Dependencies**
+### **2 Install Dependencies**
 ```bash
 npm install
 # OR
 yarn install
 ```
 
-### ** 3 Set Up Environment Variables**
+### **3 Set Up Environment Variables**
 Create a **`.env.local`** file in the project root and add:
 ```env
 NEXT_PUBLIC_WEATHER_API_KEY=your_openweathermap_api_key
@@ -53,7 +53,7 @@ NEXT_PUBLIC_CRYPTO_API_KEY=your_coingecko_api_key
 NEXT_PUBLIC_NEWS_API_KEY=your_newsdata_api_key
 ```
 
-### ** 4 Run the Development Server**
+### **4 Run the Development Server**
 ```bash
 npm run dev
 # OR
@@ -72,7 +72,7 @@ Open **`http://localhost:3000`** in your browser.
 | **News** | NewsData.io | `https://newsdata.io/api/1/news?apikey={API_KEY}` |
 
 ---
-## ** UI/UX Design Decisions**
+## **UI/UX Design Decisions**
 1. **Tailwind CSS** – Used for a clean, responsive layout.  
 2. **Card-Based UI** – Separate WeatherCard & CryptoCard components for modularity.  
 3. **WebSocket Notifications** – Provides instant price/weather alerts.  
@@ -81,7 +81,7 @@ Open **`http://localhost:3000`** in your browser.
 
 ---
 
-## ** Tech Stack**
+## **Tech Stack**
 **Next.js 13+** – React framework for SSR & SSG  
 **Redux Toolkit** – State management  
 **Tailwind CSS** – Styling  
